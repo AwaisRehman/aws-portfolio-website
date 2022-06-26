@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 import styled, { keyframes} from "styled-components"
 import LogoComponent from "../subComponents/LogoComponent"
 import PowerButton from "../subComponents/PowerButton"
@@ -27,7 +27,7 @@ const Container = styled.div`
 padding:2rem;
 `
 
-const Contact = styled(NavLink)`
+const Link = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
 top: 2rem;
@@ -129,6 +129,7 @@ const Main = () => {
   
    const [click, setClick] = useState(false);
    const handleClick = () => setClick(!click);
+   
     return (
         <MainContainer>
           <DarkDiv  click={click} />
@@ -140,7 +141,7 @@ const Main = () => {
                 <YinYang onClick={() => handleClick()} width={click ? 120 : 200 } height={click ? 120 : 200 } fill='currentColor' />
                 <span>click here</span>
             </Center>
-            <Contact target="_blank" to={{pathname:"mailto:awais.ur.rehman16@gmail.com"}}>
+            <Link target="_blank" to="/external-link">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -157,7 +158,7 @@ const Main = () => {
                 >
                     Say Hi..
                 </motion.h2>
-            </Contact>
+            </Link>
 
             <BLOG  to="/blog">
                 <motion.h2

@@ -35,36 +35,36 @@ const SocialIcons = (props) => {
         inherit={{transform:"scale(0)"}}
         animate={{scale:[0,1,1.5,1]}}
         transition={{type:"spring", duration:1, delay: 1.2}}>
-            <NavLink style={{color:'inherit'}} target="_blank"  to={{ pathname:"https://github.com/AwaisRehman"}} >
+            <a style={{color:'inherit'}} target="_blank"  href='https://github.com/AwaisRehman' >
        
               <Github width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body } />
-            </NavLink>
+            </a>
          </motion.div>
 
          <motion.div
         inherit={{transform:"scale(0)"}}
         animate={{scale:[0,1,1.5,1]}}
         transition={{type:"spring", duration:1, delay: 1.4}}>
-            <NavLink style={{color:'inherit'}}  target="_blank"  to={{ pathname:"https://twitter.com/awaisrehman1994"}}>
+            <a style={{color:'inherit'}}  target="_blank"  href="https://twitter.com/awaisrehman1994">
               <Twitter width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body } />
-            </NavLink>
+            </a>
          </motion.div>
 
         <motion.div
         inherit={{transform:"scale(0)"}}
         animate={{scale:[0,1,1.5,1]}}
         transition={{type:"spring", duration:1, delay: 1.6}}>
-            <NavLink style={{color:'inherit'}}  target="_blank"  to={{pathname:"https://www.linkedin.com/in/awais-rehman-91b108138/"}}>
+            <a style={{color:'inherit'}}  target="_blank"  href="https://www.linkedin.com/in/awais-rehman-91b108138/">
               <LinkedIn width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body }/>
-            </NavLink>
+            </a>
         </motion.div>
         <motion.div
         inherit={{transform:"scale(0)"}}
         animate={{scale:[0,1,1.5,1]}}
         transition={{type:"spring", duration:1, delay: 1.8}}>
-            <NavLink style={{color:'inherit'}}  target="_blank"  to={{pathname:"https://www.youtube.com/"}}>
+            <a style={{color:'inherit'}}  target="_blank"  href="https://www.youtube.com/">
               <YouTube width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body }/>
-            </NavLink>
+            </a>
        </motion.div>
        <Line color= {props.theme}
        

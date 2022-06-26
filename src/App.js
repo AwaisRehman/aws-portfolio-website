@@ -10,6 +10,7 @@ import BlogPage from "./components/BlogPage";
 import WorkPage from "./components/WorkPage";
 import MySkillsPage from "./components/MySkillsPage";
 import SoundBar from "./subComponents/SoundBar";
+import RedirectPage from "./subComponents/RedirectPage";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
    <Routes location={location} key={location.pathname}>
       <Route path="/">
         <Route index element={<Main />} />
+        <Route path='/external-link' element={<RedirectPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/work" element={<WorkPage />} />
